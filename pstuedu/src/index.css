@@ -5,9 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -121,7 +119,7 @@ code {
   --md-sys-color-surface-container-highest: rgb(54 52 58);
 }
 
-* {
+div {
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
 }

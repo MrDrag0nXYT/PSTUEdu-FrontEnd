@@ -9,13 +9,14 @@ import { Main } from "./components/Main";
 
 const useTheme = () => {
   const [theme, setTheme] = useState("light");
-
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
   return { theme, toggleTheme };
 };
+
+
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -29,10 +30,10 @@ function App() {
         <Route path={"/main"} element={<Main />}></Route>
       </Routes>
 
-      <div>
+      {/* <div>
         <button onClick={toggleTheme}>Переключить тему</button>
         <p>Текущая тема: {theme}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
