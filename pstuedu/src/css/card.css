@@ -1,0 +1,16 @@
+.card{
+    width: 90%;
+
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+.card_handler{
+
+}
+
+.image{
+    margin-right: 10px;
+}
