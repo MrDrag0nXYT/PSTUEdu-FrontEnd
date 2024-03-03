@@ -12,7 +12,7 @@ export default function LessonPage() {
                 <div>
                     <h2>Уроки</h2>
 
-                    <Card></Card>
+                    <Card title="123" href="/home"></Card>
                 </div>
             </Container>
         </div>

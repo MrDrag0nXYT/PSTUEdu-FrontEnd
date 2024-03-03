@@ -6,6 +6,7 @@ import "@material/web/all";
 import "./NavigationBar.css";
 import "../index.css";
 
+
 function NavigationBar() {
     return (
             <AppBar position="static" color="inherit" style={{ backgroundColor: "var(--md-sys-color-background)"}}>
