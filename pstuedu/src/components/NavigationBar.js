@@ -9,16 +9,16 @@ import "../index.css";
 
 function NavigationBar() {
     return (
-            <AppBar position="static" color="inherit" style={{ backgroundColor: "var(--md-sys-color-background)"}}>
+            <AppBar position="static" className="nav" color="inherit" style={{ backgroundColor: "var(--md-sys-color-background)"}}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters className="toolbar">
-                        <div>
+                        <div className="left">
                             <md-filled-tonal-button href="/home">Главная</md-filled-tonal-button>
                             <md-text-button href="/lessons">Уроки</md-text-button>
                             <md-text-button href="/group">Группы</md-text-button>
                         </div>
 
-                        <div>
+                        <div className="right">
                             <md-text-button href="#account">Личный кабинет</md-text-button>
                             <md-outlined-icon-button>
                                 <md-icon>light_mode</md-icon>

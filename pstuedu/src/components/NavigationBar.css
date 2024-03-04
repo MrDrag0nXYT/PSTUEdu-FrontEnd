@@ -42,3 +42,28 @@ md-icon {
   display: flex;
   justify-content: space-between;
 }
+
+.left{
+
+}
+
+@media screen and (max-width: 640px){
+    .toolbar{
+      display: none;
+      padding: 10px;
+    }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 350px){
+  .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
