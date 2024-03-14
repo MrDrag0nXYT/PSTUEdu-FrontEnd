@@ -28,12 +28,12 @@ function NavigationBar() {
               <md-text-button href="/home">Главная</md-text-button>
             )}
 
-            {pathname === "/lessons" ? (
-              <md-filled-tonal-button href="/lessons">
+            {pathname === "/subjects" ? (
+              <md-filled-tonal-button href="/subjects">
                 Уроки
               </md-filled-tonal-button>
             ) : (
-              <md-text-button href="/lessons">Уроки</md-text-button>
+              <md-text-button href="/subjects">Уроки</md-text-button>
             )}
 
             {pathname === "/group" ? (

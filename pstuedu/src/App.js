@@ -3,10 +3,11 @@ import "./index.css";
 import { useState } from "react";
 
 import NavigationBar from "./components/NavigationBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
-import Main from "./components/Main";
-import LessonPage from "./components/LessonPage";
+import Main from "./pages/Main";
+import SubjectsPage from "./pages/SubjectsPage";
+import LessonPage from "./pages/LessonPage";
 
 const useTheme = () => {
   const [theme, setTheme] = useState("light");
@@ -27,8 +28,9 @@ function App() {
       <NavigationBar />
 
       <Routes>
-        <Route path={"/home"} element={<Main />}></Route>
-        <Route path={"/lessons"} element={<LessonPage />}></Route>
+        <Route path={"/home"} element={<Main />} />
+        <Route path={"/subjects"} element={<SubjectsPage />} />
+        <Route path={"/subjects/:subjectId/lessons"} element={<LessonPage />} />
       </Routes>
 
       {/* <div>

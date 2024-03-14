@@ -1,11 +1,40 @@
 import React from 'react'
 import {Paper} from "@mui/material";
-import Container from "@mui/material/Container";
-import Card from "./Card";
+import Card from "../components/Card";
 import "../css/lessonpage.css";
 import "@material/web/all";
 
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+import "./SubjectsPage.css";
+import { Container } from "@mui/material";
+import {useParams} from "react-router-dom";
+
+
+
 export default function LessonPage() {
+    const {subjectId} = useParams();
+
+    const [lessons, setLessons] = useState([]);
+  
+    function getLessons() {
+      axios
+        .get("http://localhost:8080/api/subjects/get-all")
+  
+        .then((resp) => {
+          setLessons(resp.data);
+        })
+  
+        .catch((error) => {
+          setLessons([]);
+          console.log(error.message);
+        });
+    }
+  
+    useEffect(() => {
+      getLessons();
+    }, []);
     return (
         <div>
             <Container>
